@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightWhite"
+    tools:context=".Account.Profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#ff5274"
+        android:elevation="10dp"
+        android:padding="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:elevation="10dp"
+            app:civ_border_width="4dp"
+            app:civ_border_color="@color/mainColor"
+            android:src="@drawable/dummy_profile"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/profile_image"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/profile_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/brandon_grotesque_black"
+                android:text="sample"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_username"
+                android:text="sample"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/round_corner_2"
+        android:backgroundTint="@color/white"
+        android:layout_margin="10dp"
+        android:elevation="20dp"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request For Anime"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/profile_anime_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Anime Name"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="submit"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/round_corner_2"
+        android:backgroundTint="@color/white"
+        android:layout_margin="10dp"
+        android:elevation="20dp"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Any Suggestion"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/profile_suggestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Suggestion"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GO"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:onClick="Logout"
+            android:background="@drawable/round_corner"
+            android:text="Logout" />
+
+    </RelativeLayout>
+
+</LinearLayout>

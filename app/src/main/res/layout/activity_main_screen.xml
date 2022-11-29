@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreen">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/lightWhite"
+        android:theme="@style/navigationTheme"
+        app:headerLayout="@layout/menu_header"
+        app:menu="@menu/main_menu" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/menu_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:tint="@color/black"
+                app:srcCompat="@drawable/menu_img" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:onClick="Account"
+                app:srcCompat="@drawable/account"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/app_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/brandon_grotesque_black"
+                        android:text="Anime"
+                        android:textColor="@color/white"
+                        android:textSize="40sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/search"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/app_name"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/round_corner_2"
+                        android:backgroundTint="@color/white"
+                        android:elevation="8dp"
+                        android:onClick="search">
+
+                        <TextView
+                            android:id="@+id/search_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:text="search..."
+                            android:textColor="@color/black"
+                            android:transitionName="search_text_trans"
+                            tools:ignore="RelativeOverlap" />
+
+                        <ImageView
+                            android:id="@+id/search_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="15dp"
+                            app:srcCompat="@drawable/search" />
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/featured_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="-2dp"
+                        android:padding="8dp"></androidx.recyclerview.widget.RecyclerView>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/brandon_grotesque_black"
+                            android:text="most popular"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="20sp" />
+
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/most_popular"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"></androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/brandon_grotesque_black"
+                            android:text="categories"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:onClick="viewAllCate"
+                            android:text="view all"
+                            android:textColor="@color/lightWhite"
+                            tools:ignore="RelativeOverlap" />
+
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/categories"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"></androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

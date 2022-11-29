@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#51289e"
+    android:padding="10dp"
+    tools:context=".EpisodeSelector2">
+
+    <TextView
+        android:id="@+id/sele_name_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/brandon_grotesque_black"
+        android:text="sample"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/img_lay_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sele_name_2"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/sele_img_2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/desc_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_lay_2"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="italic"
+        android:text="sample"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desc_2">
+
+        <LinearLayout
+            android:id="@+id/button_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
