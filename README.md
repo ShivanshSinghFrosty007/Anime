@@ -12,13 +12,13 @@
 
 ### Dependencies
 ```
-  'com.google.firebase: firebase-database : 20.0.0'
+     'com.google.firebase: firebase-database : 20.0.0'
      'com.hbb20:ccp:2.5.3'
      'com.google.firebase:firebase-auth:21.0.1'
      'com.google.firebase:firebase-storage:20.0.0'
- 'com.firebaseui:firebase-ui-database:7.1.1'
+     'com.firebaseui:firebase-ui-database:7.1.1'
      'com.github.bumptech.glide:glide:4.12.0'
-    'com.google.android.exoplayer:exoplayer-core:2.14.1'
+     'com.google.android.exoplayer:exoplayer-core:2.14.1'
      'com.google.android.exoplayer:exoplayer-dash:2.14.1'
      'com.google.android.exoplayer:exoplayer-ui:2.14.1'
      'com.google.android.exoplayer:exoplayer:2.14.1'
