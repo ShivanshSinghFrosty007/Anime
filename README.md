@@ -9,4 +9,4 @@
 
 ### Main Page
 
-<img src="https://raw.githubusercontent.com/ShivanshSinghFrosty007/Anime/main/image/main.jpeg" width=50% height=50%>
+<img src="https://raw.githubusercontent.com/ShivanshSinghFrosty007/Anime/main/image/main.jpeg" width=30%>
