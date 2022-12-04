@@ -9,4 +9,4 @@
 
 ### Main Page
 
-![](https://github.com/ShivanshSinghFrosty007/Anime/blob/main/image/main.jpegg)
+![](https://raw.githubusercontent.com/ShivanshSinghFrosty007/Anime/main/image/main.jpeg)
