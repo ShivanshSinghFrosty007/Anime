@@ -46,7 +46,7 @@ step3 -> Watch your favorite anime... :)
 
 ### Video Player
 
-<img src="https://raw.githubusercontent.com/ShivanshSinghFrosty007/Anime/main/image/player.jpeg" width=60%>
+<img src="https://raw.githubusercontent.com/ShivanshSinghFrosty007/Anime/main/image/player.jpeg" width=50%>
 
 ### LogIn
 
