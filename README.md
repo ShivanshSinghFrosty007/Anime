@@ -7,6 +7,6 @@
 
 ---
 
-###Main Page
+##Main Page
 
 ![](https://github.com/ShivanshSinghFrosty007/Anime/blob/main/image/main.jpegg)
