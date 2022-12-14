@@ -32,10 +32,11 @@ step3 -> Watch your favorite anime... :)
 
 ---
 
-### Splash Screen ### Main Page
+### Splash Screen 
 
 <img src="https://raw.githubusercontent.com/ShivanshSinghFrosty007/Anime/main/image/splashScreen.jpeg" width=30%>
 
+### Main Page
 
 <img src="https://raw.githubusercontent.com/ShivanshSinghFrosty007/Anime/main/image/main.jpeg" width=30%>
 
