@@ -1,6 +1,6 @@
 # Anime App
 
- an android App to watch Anime
+ An android App to watch Anime
 
 ### Feature
 
