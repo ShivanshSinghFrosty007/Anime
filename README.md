@@ -6,7 +6,7 @@
 
 - Using <b> Firebase Realtime Database and Storage </b>
 - <b> Otp  Verification </b> SignUp
-- User Friendly Player
+- User Friendly video Player
 - Having <b>Search Bar</b>  to search your favorite anime
 - Using  <b>Recycler view </b>b> for different categories
 
