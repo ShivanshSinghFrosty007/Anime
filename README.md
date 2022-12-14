@@ -26,7 +26,7 @@
 
 #### Steps to Install
  
-step1 -> download SongHub.apk 
+step1 -> download SongHub.apk<br>
 step2 -> install in your android Device
 step3 -> Watch your favorite anime... :)
 
