@@ -8,7 +8,7 @@
 - <b> Otp  Verification </b> SignUp
 - User Friendly video Player
 - Having <b>Search Bar</b>  to search your favorite anime
-- Using  <b>Recycler view </b>b> for different categories
+- Using  <b>Recycler view </b> for different categories
 
 ### Dependencies
 ```
